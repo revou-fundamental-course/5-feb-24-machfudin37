@@ -1,0 +1,237 @@
+body {
+background-color: #0065fd;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 95vh;
+margin: 0;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+}
+
+.card {
+background-color: #f5f5f5;
+width: 600px;
+height: 400px;
+border: 1px solid #ccc;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+box-sizing: border-box;
+}
+
+.nama-aplikasi {
+font-family: 'Courier New', Courier, monospace;
+font-size: 30px;
+padding: 20px;
+text-align: center;
+color: #f5f5f5;
+}
+
+.nav-bar {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+.btn-nav {
+background-color: transparent;
+cursor: pointer;
+border: none;
+width: 200px;
+font-size: 20px;
+
+}
+
+.nav-bar>button:hover {
+color: #0065fd;
+}
+
+.form {
+padding: 10px 0px 10px 10px;
+display: flex;
+flex-direction: column;
+}
+
+.form-label {
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+}
+#petunjuk{
+font-size: 18px;
+font-family: 'Times New Roman', Times, serif;
+margin-bottom: 10px;
+}
+.form-input {
+width: 500px;
+padding: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+border-radius: 8px;
+border: 1px solid #ccc;
+background-color:#ccc ;
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+}
+.form-input:active{
+border-color: #0065fd;
+}
+.form-group {
+display: flex;
+flex-direction: column;
+padding-bottom: 30px;
+}
+
+.form-group.kalkulasi {
+justify-content: center;
+}
+
+.kalkulasi {
+justify-content: center;
+font-family: 'Times New Roman', Times, serif;
+flex-direction: row;
+background-color: #ccc;
+border-radius: 8px;
+border: 1px solid #ccc;
+width: 500px;
+height: 30px;
+font-size: 18px;
+padding: 10px;
+cursor: text;
+outline: none;
+margin: auto;
+}
+.kalkulasi:active {
+outline: none;
+}
+
+.btn-group {
+display: flex;
+justify-content: start;
+gap: 10px;
+}
+
+.btn-blue {
+border: none;
+border-radius: 10px;
+width: 150px;
+height: 30px;
+background-color: #0065fd;
+color: #f5f5f5;
+cursor: pointer;
+}
+
+.btn-blue:hover {
+background-color: #0046af;
+color: #f5f5f5;
+cursor: pointer;
+}
+.btn-green {
+border: none;
+border-radius: 10px;
+width: 150px;
+height: 30px;
+background-color: #198754;
+color: #f5f5f5;
+cursor: pointer;
+}
+
+.btn-green:hover {
+background-color: #157347;
+color: #f5f5f5;
+cursor: pointer;
+}
+
+.btn-grey {
+border: none;
+border-radius: 10px;
+width: 150px;
+height: 30px;
+background-color: #626b79;
+color: #f5f5f5;
+cursor: pointer;
+}
+
+.btn-grey:hover {
+background-color: #555b63;
+color: #f5f5f5;
+cursor: pointer;
+}
+
+.form-label:focus-within>.form-span,
+.form-input:not(:placeholder-shown)+.form-span {
+color: #0065fd;
+transform: translateY(0px);
+}
+
+/* Show Nav */
+.nav-content {
+display: none;
+}
+
+.nav-content.active {
+display: block;
+}
+.btn-nav.active{
+border-bottom: 3px solid #0065fd;
+}
+#judul{
+margin-top: 10px;
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+display: flex;
+justify-content: center;
+margin-bottom: 15px;
+}
+#isi{
+font-family: 'Times New Roman', Times, serif;
+font-size: 18px;
+padding: 6px;
+margin-bottom: 10px;
+}
+#rumus1{
+font-family: 'Times New Roman', Times, serif;
+flex-direction: row;
+background-color: #ccc;
+border-radius: 8px;
+border-color: #555b63;
+width: 500px;
+height: 30px;
+font-size: 18px;
+padding: 10px;
+cursor: text;
+}
+#atau {
+font-family: 'Times New Roman', Times, serif;
+font-size: 18px;
+margin: 10px;
+}
+#rumus2{
+font-family: 'Times New Roman', Times, serif;
+flex-direction: row;
+background-color: #ccc;
+border-radius: 8px;
+border-color: #555b63;
+width: 500px;
+height: 30px;
+font-size: 18px;
+padding: 10px;
+cursor: text;
+}
+.form-input-readonly.kalkulasi{
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+color: #555b63;
+align-content: center;
+background-color: #ccc;
+border-radius: 8px;
+width: 500px;
+height: 100px;
+border: 1px solid #ccc;
+outline: none;
+padding: 10px;
+}
